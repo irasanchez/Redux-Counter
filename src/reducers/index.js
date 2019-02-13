@@ -16,13 +16,13 @@ export default (state = initialState, action) => {
       // return an object that contains the new state, changes included
       return {
         ...state,
-        count: action.payload
+        count: ++action.payload
       };
     case DECREMENT:
       // Fill in the body of this case
       return {
         ...state,
-        count: action.payload
+        count: --action.payload
       };
     default:
       return state;
